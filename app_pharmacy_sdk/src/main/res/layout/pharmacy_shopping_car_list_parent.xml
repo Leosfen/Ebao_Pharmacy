@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pharmacy_white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/view_head"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_below="@+id/layout_title"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <ImageButton
+                android:id="@+id/btn_select_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:focusable="false"
+                android:paddingBottom="10dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/pharmacy_shopping_icon_unselected"
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:focusable="false"
+                android:paddingBottom="10dp"
+                android:paddingRight="8dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/pharmacy_shopping_icon_pharmacy"
+                />
+
+            <TextView
+                android:id="@+id/tv_shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="开封百氏康大药房"
+                android:textColor="@color/color_black_484747"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_freight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:text=""
+            android:textColor="@color/color_black_484747"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_line"
+        style="@style/pharmacy_center_line_gray"
+        android:layout_below="@+id/view_head"/>
+</LinearLayout>

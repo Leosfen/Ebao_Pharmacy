@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="volley_generic_error">网络请求服务错误</string>
+    <string name="volley_network_not_available">网络不可用，请检查网络连接</string>
+    <string name="volley_request_timeout">请求超时!</string>
+</resources>

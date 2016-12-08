@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/pharmacy_activity_common_head1"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/my_orders_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/color_blue_00a5f9"
+        app:tabSelectedTextColor="@color/color_blue_00a5f9"
+        app:tabTextColor="@color/color_black_666666"/>
+
+    <View
+        style="@style/pharmacy_divider_line"></View>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/orders_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

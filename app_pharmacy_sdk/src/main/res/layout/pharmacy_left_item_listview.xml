@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              >
+
+    <TextView
+        android:gravity="left"
+        android:padding="15dp"
+        android:id="@+id/pharamcy_left_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="条目n你们好"
+        android:textSize="@dimen/left_item_text_size"
+        android:textColor="@color/module_title_black"/>
+</LinearLayout>

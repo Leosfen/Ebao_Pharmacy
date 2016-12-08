@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_gray_efeff4"
+    >
+
+    <RelativeLayout
+        android:id="@+id/layout_normal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+
+        <include
+            android:id="@+id/normal_layout_title"
+            layout="@layout/pharmacy_fragment_car_head"/>
+
+        <ExpandableListView
+            android:id="@+id/shoppingcar_listview_normal"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/normal_bottom_view"
+            android:layout_below="@+id/normal_layout_title"
+            android:divider="@null"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_above="@+id/normal_bottom_view"
+            android:background="@color/center_line_gray"
+            />
+
+        <LinearLayout
+            android:id="@+id/normal_bottom_view"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_alignParentBottom="true"
+            android:background="#FBFBFB"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="13dp"
+                    android:text="合计:"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="16sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="¥"
+                    android:textColor="@color/color_red_ff6766"
+                    android:textSize="16sp"
+                    />
+
+                <TextView
+                    android:id="@+id/fragment_car_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="0.00"
+                    android:textColor="@color/color_red_ff6766"
+                    android:textSize="17sp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fragment_car_commit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color_gray_d1d1d1"
+                android:gravity="center"
+                android:text="提交预订"
+                android:textColor="@color/pharmacy_white"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/normal_empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/normal_layout_title"
+            android:background="@color/pharmacy_white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="30dp"
+                android:drawableTop="@drawable/pharmacy_knowledge_prompt_bc3"
+                android:gravity="center"
+                android:text="您的需求清单空空哒！"
+                android:textColor="@color/color_gray_999999"
+                android:textSize="16sp"
+                />
+
+            <Button
+                android:id="@+id/empty_view_button"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/pharmacy_save_btn_selector"
+                android:text="马上去逛逛"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_edit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+
+        <include
+            android:id="@+id/edit_layout_title"
+            layout="@layout/pharmacy_fragment_car_head"/>
+
+        <ExpandableListView
+            android:id="@+id/shoppingcar_listview_edit"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/edit_bottom_view"
+            android:layout_below="@+id/edit_layout_title"
+            android:divider="@null"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_above="@+id/edit_bottom_view"
+            android:background="@color/center_line_gray"
+            />
+
+        <LinearLayout
+            android:id="@+id/edit_bottom_view"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_alignParentBottom="true"
+            android:background="#FBFBFB"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                >
+
+                <ImageButton
+                    android:id="@+id/btn_edit_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="13dp"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:padding="5dp"
+                    android:src="@drawable/pharmacy_shopping_icon_unselected"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="全选"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fragment_car_delete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color_gray_d1d1d1"
+                android:gravity="center"
+                android:text="刪除"
+                android:textColor="@color/pharmacy_white"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+        
+    </RelativeLayout>
+
+</RelativeLayout>
+

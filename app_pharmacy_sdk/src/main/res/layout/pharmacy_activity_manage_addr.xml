@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_gray_efeff4"
+    >
+
+    <include
+        android:id="@+id/manager_addr_title"
+        layout="@layout/pharmacy_activity_common_head1"/>
+
+    <LinearLayout
+        android:id="@+id/manageraddr_layout_newaddr"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        >
+
+        <View
+            style="@style/pharmacy_divider_line"
+            />
+
+        <Button
+            android:id="@+id/manager_addr_create_newaddr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/pharmacy_save_btn_selector"
+            android:gravity="center"
+            android:text="新增收货地址"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/manageraddr_listview"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/manageraddr_layout_newaddr"
+        android:layout_below="@+id/manager_addr_title"
+        android:divider="@null"
+        />
+
+    <LinearLayout
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/manageraddr_layout_newaddr"
+        android:layout_below="@+id/manager_addr_title"
+        android:gravity="center"
+        android:background="@color/pharmacy_white"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="30dp"
+            android:drawableTop="@drawable/pharmacy_knowledge_prompt_bc2"
+            android:text="还没有地址，创建一个吧！"
+            android:textColor="@color/color_gray_999999"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

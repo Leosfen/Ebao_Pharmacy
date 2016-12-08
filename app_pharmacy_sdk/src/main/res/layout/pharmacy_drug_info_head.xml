@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/bg_title_color">
+
+    <ImageButton
+        android:id="@+id/pharmacy_leftBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/pharmacy_layout_click_transparent"
+        android:paddingBottom="20dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="40dp"
+        android:paddingTop="20dp"
+        android:src="@drawable/pharmacy_blue_back"/>
+
+    <LinearLayout
+        android:id="@+id/title_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/rightBtn"
+        android:layout_toRightOf="@+id/pharmacy_leftBtn"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingRight="15dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="商品"
+                android:textColor="@color/color_blue_00a5f9"
+                android:textSize="16sp"
+                />
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="1dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="1dp"
+                android:background="@color/color_blue_00a5f9"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/head_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="详情"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                />
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tv_title"
+                android:layout_gravity="left"
+                android:background="@color/color_blue_00a5f9"
+                android:visibility="invisible"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/title_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/rightBtn"
+        android:layout_toRightOf="@+id/pharmacy_leftBtn"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingRight="15dp"
+            >
+
+            <TextView
+                android:id="@+id/head_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="商品"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                />
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="3px"
+                android:layout_below="@+id/tv_title"
+                android:layout_gravity="right"
+                android:background="@color/color_blue_00a5f9"
+                android:visibility="invisible"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="详情"
+                android:textColor="@color/color_blue_00a5f9"
+                android:textSize="16sp"
+                />
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="1dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="2dp"
+                android:background="@color/color_blue_00a5f9"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/rightBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@color/pharmacy_transparentcolor"
+        android:paddingBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:paddingRight="12dp"
+        android:paddingTop="20dp"
+        android:src="@drawable/pharmacy_druginfo_bg_more"
+        />
+
+
+    <LinearLayout
+        style="@style/pharmacy_divider_line"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

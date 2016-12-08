@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/pharmacy_white"
+              android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pharmacy_white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="30dp"
+            android:drawableTop="@drawable/pharmacy_knowledge_prompt_bc3"
+            android:gravity="center"
+            android:text="抱歉，此商品暂无详细信息"
+            android:textColor="@color/color_gray_999999"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/drugdisp_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:text="999感冒灵颗粒10g*9包 说明书"
+                android:textColor="@color/color_black_484747"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:id="@+id/ll_disp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/center_line_gray"/>
+                <TextView
+                    android:id="@+id/tv_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="说明书请仔细阅读说明书并按说明使用或在药师指导下购买和使用"
+                    android:textColor="@color/module_title_gray"
+                    android:textSize="12sp"/>
+                <TextView
+                    android:id="@+id/tv_nomal_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="【通用名称】"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/tv_product_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="【商品名称】"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_eng_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="【英文名称】"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_chn_spell"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="【汉语拼音】"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_element"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="【成份】"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_character"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="【性状】"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_elem_char"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="【成份和性状】"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_function_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="【作用类别】"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_radiate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="【放射性核素半衰期】"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_radioactive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="【放射性活度和标示时间】"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_inoculate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="【接种对象】"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_indication"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="【适应症】"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_function"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="【功能主治】"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_spec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="【规格】"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_effect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="【作用与用途】"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_immune"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="【免疫程序和剂量】"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_dosage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="【用法用量】"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_absorb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="【内辐射吸收剂量】"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_adverse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="【不良反应】"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_taboo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="【禁忌】"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="【注意事项】"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_gravida_use"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="【孕妇及哺乳期妇女用药】"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_child_use"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="【儿童用药】"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_aged_use"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="【老年用药】"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_interaction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="【药物相互作用】"
+                    android:textColor="@color/color_black_484747"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_excessive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="【药物过量】"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_clinical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="【临床试验】"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_pharmaco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="【药理毒理】"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_kinetics"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="【药代动力学】"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_store"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="【贮藏】"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_pack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="【包装】"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_validity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="【有效期】"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_executive_stad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="【执行标准】"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_approval_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="【批准文号】开水冲服，一次10克(1袋)，一日3次"
+                    android:textColor="@color/color_black_484747"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_import_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="【进口药品注册证号】开水冲服，一次10克(1袋)，一日3次"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_pack_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="【分包装批准文号】"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="【生产企业名称】"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_pack_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="【分包装企业名称】"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_com_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="【生产企业地址】"
+                    android:textColor="@color/color_black_484747"
+                    android:textSize="14sp"/>
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_com_code"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="【生产企业邮政编码】开水冲服，一次10克(1袋)，一日3次"-->
+                    <!--android:textColor="@color/color_black_484747"-->
+                    <!--android:textSize="14sp"/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_com_phone"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="【生产企业电话和传真号码】开水冲服，一次10克(1袋)，一日3次"-->
+                    <!--android:textColor="@color/color_black_484747"-->
+                    <!--android:textSize="14sp"/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_com_url"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="【生产企业网址】开水冲服，一次10克(1袋)，一日3次"-->
+                    <!--android:textColor="@color/color_black_484747"-->
+                    <!--android:textSize="14sp"/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_org_spec"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="【说明书来源】开水冲服，一次10克(1袋)，一日3次"-->
+                    <!--android:textColor="@color/color_black_484747"-->
+                    <!--android:textSize="14sp"/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_org_spec_url"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="【说明书来源网址】开水冲服，一次10克(1袋)，一日3次"-->
+                    <!--android:textColor="@color/color_black_484747"-->
+                    <!--android:textSize="14sp"/>-->
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_caution"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="【警示语】开水冲服，一次10克(1袋)，一日3次"-->
+                    <!--android:textColor="@color/color_black_484747"-->
+                    <!--android:textSize="14sp"/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_warning"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="【警告】开水冲服，一次10克(1袋)，一日3次"-->
+                    <!--android:textColor="@color/color_black_484747"-->
+                    <!--android:textSize="14sp"/>-->
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

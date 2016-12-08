@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Pharmacy_SDK_Theme" parent="android:Theme.Light">
+        <item name="android:windowBackground">@color/pharmacy_bg_coclor</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="pharmacy_progress_loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@drawable/pharmacy_selector_dialog_bg</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="pharmacy_divider_line">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">#dbd8d8</item>
+    </style>
+
+    <style name="SearchEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/pharmacy_corner_stroke_bg</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColorHint">#878787</item>
+        <item name="android:drawableLeft">@drawable/pharmacy_sousuo</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawableRight">@drawable/pharmacy_ic_search_delete</item>
+    </style>
+    <!--索要发票页-->
+    <style name="invoicesEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColorHint">#878787</item>
+        <item name="android:drawableRight">@drawable/pharmacy_ic_search_delete</item>
+    </style>
+    <!--收货地址textview-->
+    <style name="pharmacy_addr_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/color_black_484747</item>
+
+    </style>
+
+    <!--收货地址editview-->
+    <style name="pharmacy_addr_et">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">@color/pharmacy_white</item>
+        <!--<item name="android:padding">16dp</item>-->
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textColor">@color/color_black_666666</item>
+        <item name="android:textColorHint">@color/color_gray_9c9c9c</item>
+        <item name="android:drawablePadding">10dp</item>
+        <!--<item name="android:focusableInTouchMode">true</item>-->
+        <!--<item name="android:focusable">true</item>-->
+    </style>
+
+    <!--分割线-->
+    <style name="pharmacy_view_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/color_gray_d8d8d8</item>
+    </style>
+
+    <style name="pharmacy_addr_save_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">50dp</item>
+        <item name="android:layout_marginRight">50dp</item>
+        <item name="android:layout_marginTop">29dp</item>
+        <item name="android:layout_marginBottom">29dp</item>
+        <item name="android:background">@drawable/pharmacy_save_btn_selector</item>
+        <item name="android:textColor">@color/pharmacy_white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="customProgressBar" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:indeterminateDrawable">@drawable/pharmacy_loading_small_anim</item>
+        <item name="android:layout_width">21dip</item>
+        <item name="android:layout_height">21dip</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!--分割线 e5e5e5-->
+    <style name="pharmacy_center_line_gray">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/center_line_gray</item>
+    </style>
+    <!--地址管理layout-->
+    <style name="pharmacy_addr_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+    <!--10px高灰色view-->
+    <style name="gray_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">10px</item>
+        <item name="android:background">@color/color_gray_efeff4</item>
+    </style>
+
+    <style name="CustomDialog" parent="android:style/Theme.Dialog">
+
+        <!-- 背景颜色及透明程度 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 是否有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="PopupWindowAnimation">
+        <item name="android:windowEnterAnimation">@anim/pharmacy_popshow_anim</item>
+        <item name="android:windowExitAnimation">@anim/pharmacy_pophidden_anim</item>
+    </style>
+
+    <!--确认订单-->
+    <style name="ll_confirm_orders">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:orientation">vertical</item>
+
+    </style>
+
+    <style name="query_orderprogress_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/textcolor_9c9c9c</item>
+    </style>
+
+    <style name="MyDialogStyleBottom" parent="android:Theme.Dialog">
+        <!--<item name="android:windowAnimationStyle">@style/AnimBottom</item>-->
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@drawable/pharmacy_dialog_round_bg</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+    <style name="cut_line_hor2_1">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">#dbd8d8</item>
+    </style>
+</resources>

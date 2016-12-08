@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_coclor"
+              android:orientation="vertical"
+    >
+
+    <include layout="@layout/pharmacy_fragment_common_head1"/>
+
+    <LinearLayout
+        android:id="@+id/all_orders_layout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/pharmacy_layout_click_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="13dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:text="全部订单"
+            android:textColor="@color/color_black_484747"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/img_arrow_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="13dp"
+            android:src="@drawable/pharmacy_convenient_icon_arrow"/>
+    </LinearLayout>
+
+    <View
+        style="@style/pharmacy_divider_line"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="136dp"
+        android:background="@color/pharmacy_white"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/shopping_doing"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/pharmacy_layout_click_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:src="@drawable/pharmacy_manage_icon_ongoing"
+                    />
+
+                <TextView
+                    android:id="@+id/order_doing_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/pharmacy_circle_textview_bg"
+                    android:gravity="center"
+                    android:text="99+"
+                    android:textColor="@color/textcolor_ff7373"
+                    android:textSize="9sp"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="进行中"
+                android:textColor="@color/textcolor_9c9c9c"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#dbd8d8"></View>
+
+        <LinearLayout
+            android:id="@+id/shoppingsort_finished"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/pharmacy_layout_click_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/pharmacy_manage_icon_done"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="已完成"
+                android:textColor="@color/textcolor_9c9c9c"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#dbd8d8"></View>
+
+        <LinearLayout
+            android:id="@+id/shoppingsort_cancal"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/pharmacy_layout_click_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/pharmacy_manage_icon_cancel"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="已取消"
+                android:textColor="@color/textcolor_9c9c9c"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@null"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout_manage_addr"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/pharmacy_layout_click_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="13dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:text="地址管理"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/img_arrow_manageraddr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="13dp"
+            android:src="@drawable/pharmacy_convenient_icon_arrow"/>
+    </LinearLayout>
+
+</LinearLayout>

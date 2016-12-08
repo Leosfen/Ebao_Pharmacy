@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pharmacy_layout_click_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:src="@drawable/pharmacy_address_icon_position"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/poi_result_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="琨莎中心A座"
+                android:textColor="#484747"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/poi_result_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="朝阳区新源里6号"
+                android:textColor="#9C9C9C"
+                android:textSize="12sp"/>
+
+            <View
+                style="@style/pharmacy_divider_line"
+                android:layout_marginTop="8dp"></View>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

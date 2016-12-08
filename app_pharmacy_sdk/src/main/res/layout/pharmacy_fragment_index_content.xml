@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/index_content_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_2"
+            android:layout_width="fill_parent"
+            android:layout_height="160dp"
+            >
+
+            <com.ebaonet.pharmacy.view.infiniteviewpager.viewpager.InfiniteViewPager
+                android:id="@+id/viewpager2"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/pharmacy_main_banner_default_01"
+                android:visibility="visible"/>
+
+            <com.ebaonet.pharmacy.view.infiniteviewpager.indicator.CirclePageIndicator
+                android:id="@+id/indicator2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="2dp"
+                app:fillColor="#595959"
+                app:pageColor="#FFFFFF"
+                app:strokeWidth="0dp"/>
+        </RelativeLayout>
+
+        <com.ebaonet.pharmacy.view.NoScrollGridView
+            android:id="@+id/top_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1px"
+            android:layout_marginTop="1px"
+            android:background="@color/white"
+            android:listSelector="@color/transparentcolor"
+            android:numColumns="4"
+            android:scrollbars="none">
+        </com.ebaonet.pharmacy.view.NoScrollGridView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/textcolor_fafafa"/>
+
+        <LinearLayout
+            android:id="@+id/ll_roll_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/pharmacy_roll_title"/>
+
+            <com.ebaonet.pharmacy.view.TextViewAd
+                android:id="@+id/tv_ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="结算单看不懂？用这个就对了！"
+                android:textColor="@color/textcolor_a4a1a1"
+                android:textSize="13dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <com.ebaonet.pharmacy.view.NoScrollGridView
+                android:id="@+id/middle_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1px"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:listSelector="@color/transparentcolor"
+                android:numColumns="3"
+                android:scrollbars="none">
+            </com.ebaonet.pharmacy.view.NoScrollGridView>
+        </LinearLayout>
+        <!--折扣模块-->
+        <!--  android:layout_marginTop="10dp"-->
+        <LinearLayout
+            android:id="@+id/ll_content_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            >
+        </LinearLayout>
+
+        <!--推荐药品模块-->
+        <LinearLayout
+            android:id="@+id/ll_recommond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/pharmacy_icon_recommend"
+                    android:drawablePadding="9dp"
+                    android:gravity="center"
+                    android:text="推荐药品"
+                    android:textColor="@color/color_blue_00a5f9"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/color_gray_e5e5e5"></View>
+
+            <com.ebaonet.pharmacy.view.NoScrollGridView
+                android:id="@+id/recommend_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1px"
+                android:layout_marginTop="1px"
+                android:listSelector="@color/transparentcolor"
+                android:numColumns="3"
+                android:scrollbars="none">
+
+            </com.ebaonet.pharmacy.view.NoScrollGridView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/index_content_last"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    </LinearLayout>
+
+</LinearLayout>

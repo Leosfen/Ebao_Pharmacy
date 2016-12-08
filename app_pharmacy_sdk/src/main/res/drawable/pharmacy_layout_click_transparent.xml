@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--将点击区域的背景设置为这个，即可防止重复点击-->
+    <item android:drawable="@color/pharmacy_transparentcolor" android:state_pressed="true"/>
+    <item android:drawable="@color/pharmacy_transparentcolor" android:state_focused="true"/>
+    <item android:drawable="@color/pharmacy_transparentcolor"/>
+
+</selector>

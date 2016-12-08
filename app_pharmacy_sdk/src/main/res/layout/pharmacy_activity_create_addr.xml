@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/pharmacy_white"
+              android:orientation="vertical"
+    >
+
+    <include layout="@layout/pharmacy_activity_common_head1"/>
+
+
+    <LinearLayout
+        style="@style/pharmacy_addr_layout"
+        >
+
+        <TextView
+            style="@style/pharmacy_addr_tv"
+            android:text="收货人:"
+            />
+
+        <com.ebaonet.pharmacy.view.EditTextWithDelete
+            android:id="@+id/create_addr_et_receiver"
+            style="@style/pharmacy_addr_et"
+            android:hint="请填写收货人"
+            android:maxLength="10"
+            android:singleLine="true"
+            />
+    </LinearLayout>
+
+    <View
+        style="@style/pharmacy_center_line_gray"
+        />
+
+    <LinearLayout
+        style="@style/pharmacy_addr_layout"
+        >
+
+        <TextView
+            style="@style/pharmacy_addr_tv"
+            android:text="手机号:"
+            />
+
+        <com.ebaonet.pharmacy.view.EditTextWithDelete
+            android:id="@+id/create_addr_et_phone"
+            style="@style/pharmacy_addr_et"
+            android:hint="请填写收货人手机号码"
+            android:maxLength="11"
+            android:numeric="integer"
+            android:singleLine="true"
+            />
+    </LinearLayout>
+
+    <View
+        style="@style/pharmacy_center_line_gray"/>
+
+    <LinearLayout
+        android:id="@+id/create_addr_layout_area"
+        style="@style/pharmacy_addr_layout"
+        android:background="@drawable/pharmacy_layout_click_bg"
+        >
+
+        <TextView
+            style="@style/pharmacy_addr_tv"
+            android:layout_gravity="center"
+            android:text="所在区域:"
+            />
+
+        <TextView
+            android:id="@+id/create_addr_et_area"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/pharmacy_address_icon_position"
+            android:drawablePadding="8dp"
+            android:padding="14dp"
+            android:text="请选择写字楼、小区等"
+            android:textColor="@color/color_gray_9c9c9c"
+            android:textSize="14sp"
+            />
+
+        <ImageView
+            android:id="@+id/img_arrow_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/pharmacy_convenient_icon_arrow"/>
+    </LinearLayout>
+
+    <View
+        style="@style/pharmacy_center_line_gray"/>
+
+    <LinearLayout
+        style="@style/pharmacy_addr_layout"
+        >
+
+        <TextView
+            style="@style/pharmacy_addr_tv"
+            android:text="详细地址:"
+            />
+
+        <com.ebaonet.pharmacy.view.EditTextWithDelete
+            android:id="@+id/create_addr_et_detail"
+            style="@style/pharmacy_addr_et"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textSize="14sp"
+            android:hint="请输入您的单元号、门牌号"
+            android:imeOptions="actionDone"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/center_line_gray"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_gray_efeff4"
+        >
+
+        <Button
+            android:id="@+id/create_addr_btn_save"
+            style="@style/pharmacy_addr_save_btn"
+            android:text="保存"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+    <ToggleButton
+        android:id="@+id/tBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/pharmacy_expand_tab_selector"
+        android:button="@color/pharmacy_transparentcolor"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:textColor="@color/pharmacy_expand_big_textcolor_selector"
+        android:textOff="@null"
+        android:textOn="@null"
+        android:textSize="15sp">
+    </ToggleButton>
+
+</RelativeLayout>

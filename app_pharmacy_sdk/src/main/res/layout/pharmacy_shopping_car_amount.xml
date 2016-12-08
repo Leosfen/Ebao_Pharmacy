@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:focusable="true"
+              android:background="@drawable/pharmacy_shopping_car_num_bg"
+              android:showDividers="middle"
+              android:orientation="horizontal">
+    <ImageButton
+        android:id="@+id/btn_minus"
+        android:src="@drawable/pharmacy_shopping_minus_disabled"
+        android:background="@null"
+        android:gravity="center"
+        android:layout_width="23dp"
+        android:layout_height="23dp"/>
+    <View
+        android:layout_width="2px"
+        android:layout_height="fill_parent"
+        android:background="@color/color_gray_999999"/>
+    <EditText
+        android:id="@+id/et_total"
+        android:layout_width="35dp"
+        android:layout_height="23dp"
+        android:text="1"
+        android:textSize="11sp"
+        android:background="@null"
+        android:enabled="false"
+        android:textColor="#303030"
+        android:gravity="center"
+        />
+    <View
+        android:layout_width="2px"
+        android:layout_height="fill_parent"
+        android:background="@color/color_gray_999999"/>
+    <ImageButton
+        android:id="@+id/btn_plus"
+        android:src="@drawable/pharmacy_shopping_add"
+        android:background="@null"
+        android:gravity="center"
+        android:layout_width="23dp"
+        android:layout_height="23dp"/>
+
+</LinearLayout>

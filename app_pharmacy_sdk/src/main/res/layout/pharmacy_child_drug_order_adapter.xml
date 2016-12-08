@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pharmacy_layout_click_bg"
+        android:orientation="horizontal"
+        android:padding="13dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <com.ebaonet.pharmacy.sdk.adapt.SquareImageView
+                android:id="@+id/drug_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/pharmacy_send_pic_default"/>
+
+            <ImageView
+                android:id="@+id/img_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/pharmacy_watermark"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3.7"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/drug_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:minLines="1"
+                    android:text="惠氏善存 多维生素片 维矿物类 惠氏善存 多维生素片 维矿物类惠氏善存 多维生素片 维矿物类"
+                    android:textColor="@color/textcolor_303030"
+                    android:textSize="@dimen/my_order_list_bigtext_size"/>
+
+                <TextView
+                    android:id="@+id/drug_standard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3gx10袋/盒"
+                    android:textColor="@color/textcolor_9c9c9c"
+                    android:textSize="@dimen/my_order_list_nomaltext_size"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/drug_price_single"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="¥8.50"
+                    android:textColor="@color/textcolor_666666"
+                    android:textSize="@dimen/my_order_list_nomaltext_size"/>
+
+                <TextView
+                    android:id="@+id/drug_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="x1"
+                    android:textColor="@color/textcolor_9c9c9c"
+                    android:textSize="@dimen/my_order_list_smalltext_size"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

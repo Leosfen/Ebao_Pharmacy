@@ -1,0 +1,63 @@
+import java.text.SimpleDateFormat
+
+apply plugin: 'com.android.application'
+
+def releaseTime() {
+    return new SimpleDateFormat("yyyyMMdd_HHmmss").format(System.currentTimeMillis());
+}
+
+android {
+    useLibrary 'org.apache.http.legacy'
+    signingConfigs {
+        config {
+            keyAlias 'ebao'
+            keyPassword 'yibaohulian'
+            storeFile file('/ebao.key')
+            storePassword 'yibaohulian'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.ebaonet.online.pharmacy"
+        minSdkVersion 9
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.contains("release.apk")) {
+                        def fileName = "ebao-pharmacy-${defaultConfig.versionName}-beta1-${releaseTime()}.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            }
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+
+    productFlavors {
+    }
+    dexOptions {
+        javaMaxHeapSize "2g"
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile project(':app_pharmacy_sdk')
+    compile 'com.android.support:multidex:1.0.1'
+}

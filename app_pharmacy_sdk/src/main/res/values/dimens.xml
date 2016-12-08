@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 筛选项高度 -->
+    <dimen name="filter_text_height">35dp</dimen>
+    <dimen name="filter_grid_view_padding">10dp</dimen>
+    <dimen name="filter_double_txt_size">4.5sp</dimen>
+    <dimen name="filter_list_footer_bottom">20dp</dimen>
+    <dimen name="orders_width_per">20dp</dimen>
+    <dimen name="my_order_list_bigtext_size">15sp</dimen>
+    <dimen name="my_order_list_nomaltext_size">14sp</dimen>
+    <dimen name="my_order_list_smalltext_size">13sp</dimen>
+    <dimen name="show_grid_item_width">115dp</dimen>
+
+    <dimen name="query_item_under_text">10sp</dimen>
+</resources>

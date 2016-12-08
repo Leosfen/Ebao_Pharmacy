@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+
+    >
+
+    <TextView
+        android:id="@+id/pop_index"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/pharmacy_more_icon_home"
+        android:drawablePadding="5dp"
+        android:paddingBottom="13dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:paddingTop="20dp"
+        android:text="首页"
+        android:textColor="#dadada"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#949494"/>
+
+    <TextView
+        android:id="@+id/pop_online"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/pharmacy_more_icon_phone"
+        android:drawablePadding="5dp"
+        android:paddingBottom="13dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:paddingTop="13dp"
+        android:text="掌上药店"
+        android:textColor="#dadada"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#949494"/>
+
+    <TextView
+        android:id="@+id/tv_requirementslist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/pharmacy_more_icon_buy"
+        android:drawablePadding="5dp"
+        android:paddingBottom="13dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:paddingTop="20dp"
+        android:text="需求清单"
+        android:textColor="#dadada"
+        />
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/alpha_transparent_color"
+              android:clickable="true"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/view_filter_double_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F4F4F5"
+        android:orientation="vertical">
+
+        <View style="@style/pharmacy_divider_line"/>
+
+
+        <ListView
+            android:id="@+id/filter_listView_double"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="#e0e0e0"
+            android:dividerHeight="1px"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+        </ListView>
+
+        <View style="@style/pharmacy_divider_line"/>
+
+        <LinearLayout
+            android:id="@+id/bottom_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                style="@style/pharmacy_divider_line"
+                android:layout_marginTop="5dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="20dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:id="@+id/filter_double_resetTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="重置"
+                    android:textColor="@color/color_black_666666"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/filter_double_completeTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="完成"
+                    android:textColor="@color/select_filter_color"
+                    android:textSize="15sp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/blank_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/pharmacy_transparentcolor"
+        android:orientation="vertical">
+    </LinearLayout>
+
+</LinearLayout>

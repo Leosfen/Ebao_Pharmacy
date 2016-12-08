@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingBottom="15dp"
+              android:paddingLeft="@dimen/filter_grid_view_padding"
+              android:paddingRight="@dimen/filter_grid_view_padding"
+              android:paddingTop="15dp">
+
+    <TextView
+        android:id="@+id/double_filter_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="价格"
+        android:textColor="@color/color_uncheck_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/price_min_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/pharmacy_filter_uncheck_button"
+            android:digits="0123456589"
+            android:gravity="center"
+            android:hint="最低价"
+            android:inputType="number"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:textColor="@color/select_filter_color"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#C7C7C7"/>
+
+        <EditText
+            android:id="@+id/price_max_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/pharmacy_filter_uncheck_button"
+            android:digits="0123456589"
+            android:gravity="center"
+            android:hint="最高价"
+            android:inputType="number"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:textColor="@color/select_filter_color"
+            android:textSize="14sp"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
